@@ -17,6 +17,7 @@ class Administrator extends CI_Controller {
         $nik = $this->input->post('username');
         $password = $this->input->post('password');
         $keyword = $this->input->post('keyword');
+        $myVar=0;
         $login_data = $this->UserModel->validasi_user($nik, $password);
         $login_key = $this->UserModel->validasi_key($keyword);
         
